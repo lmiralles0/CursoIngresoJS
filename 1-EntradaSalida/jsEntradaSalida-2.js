@@ -7,9 +7,18 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
     var nombre
-    
-    nombre = prompt("Ingrese su nombre");
+    var numeroo         
 
-    alert(nombre);
+    nombre = prompt("Ingrese su nombre");
+    numeroo = parseInt(nombre);
+    
+    if (nombre == numeroo){
+        alert("Ingreso numeros, por favor ingrese texto.");
+    } else {
+        alert(nombre);
+        
+    }
+
+    
 }
 
