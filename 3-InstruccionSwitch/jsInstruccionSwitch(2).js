@@ -5,9 +5,7 @@ var mesDelAño = document.getElementById('mes').value;
 
 
 switch(mesDelAño){
-    default:        
-        alert("Falta para el invierno.");
-        break;
+    
     case "Julio":
     case "Agosto":    
         alert("Abrigate que hace frio.");
@@ -17,6 +15,9 @@ switch(mesDelAño){
     case "Diciembre":        
         alert("Ya pasamos el frio, ahora calor!!!.");
         break;
+    default:        
+        alert("Falta para el invierno.");
+        break;    
     }
 
 
