@@ -1,5 +1,30 @@
 function mostrar()
 {
+var numeroIngreso;
+var contadorNum = 0;
+var acumulador = 0;
+var promedio;
+
+
+while (contadorNum < 5){
+
+   numeroIngreso = parseInt(prompt("Ingrasar numero."));
+   while(isNaN(numeroIngreso)){
+    numeroIngreso = parseInt(prompt("Eso no es un numero. Ingrese numero."));
+   } 
+   contadorNum ++;
+   acumulador += numeroIngreso;
+ }
+  document.getElementById("suma").value = acumulador; 
+  promedio = acumulador /5;
+  document.getElementById("promedio").value = promedio; 
+
+
+
+}//FIN DE LA FUNCIÓN
+/*
+function mostrar()
+{
   var numeroIngresado // asignar numeros que se ingresan
 	var contador = 0; // para contar en bucle (cuantas veces giro)
 	var acumulador = 0; // para sumar los numeros ingresados
@@ -31,3 +56,5 @@ promedio = acumulador / contador;
 document.getElementById('promedio').value = acumulador/5;
 
 }//FIN DE LA FUNCIÓN
+
+*/
