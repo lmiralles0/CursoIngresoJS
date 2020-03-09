@@ -48,47 +48,6 @@ document.write ("1) La suma de positivos es " + sumaPositivo + "<br>" +
                 "9) Diferencia de Positivos y Negativos " + diferenciaPositivosNegativos);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*function mostrar()
 {
   //declarar contadores y variables
