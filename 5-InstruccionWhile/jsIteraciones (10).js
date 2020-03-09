@@ -1,4 +1,95 @@
-function mostrar()
+function mostrar(){
+var numero;
+var sumaPositivo = 0;
+var sumaNegativo = 0;
+var contadorNegativo = 0;
+var contadorPositivo = 0; 
+var contadorCero = 0;
+var cantidadPares = 0;
+var promedioPositivo;
+var promedioNegativo;
+var diferenciaPositivosNegativos;
+var respuesta ="s";
+
+while (respuesta == "s"){
+        
+        numero = parseInt(prompt("Ingrese numero."));
+        while(isNaN(numero)){
+                numero = parseInt(prompt("Ingrese numero."));
+        }
+        if (numero % 2 == 0){
+                cantidadPares++;
+        }
+        if (numero > 0){
+                contadorPositivo ++;
+                sumaPositivo = (numero + sumaPositivo);
+        }
+        if (numero < 0){
+                contadorNegativo ++;
+                sumaNegativo = (numero + sumaNegativo)
+        } else {
+                contadorCero ++;
+        } 
+        respuesta = prompt("Si desea continuar, ingrese 's'");
+}
+promedioNegativo = (parseInt(sumaNegativo/contadorNegativo));
+promedioPositivo = (parseInt(sumaPositivo/contadorPositivo));
+diferenciaPositivosNegativos = (parseInt(promedioPositivo/promedioNegativo));
+
+
+document.write ("1) La suma de positivos es " + sumaPositivo + "<br>" + 
+                "2) La suma de los negativos es " + sumaNegativo + "<br>" + 
+                "3) Cantidad de positivos es " + contadorPositivo + "<br>" +
+                "4) Cantidad de negativos es " + contadorNegativo + "<br>" +
+                "5) Cantidad de ceros es " + contadorCero + "<br>" + 
+                "6) Cantidad de numeros pares " + cantidadPares + "<br>" +  
+                "7) Promedio de postivos " + promedioPositivo + "<br>" + 
+                "8) Promedio de negativos " + promedioNegativo + "<br>" + 
+                "9) Diferencia de Positivos y Negativos " + diferenciaPositivosNegativos);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function mostrar()
 {
   //declarar contadores y variables
   var contador = 0;
@@ -66,4 +157,4 @@ document.write("El total de numeros positivos es de: " + acumuladorPositivos + "
 
 //si en documentwrite se imprime "\n" se imprime uno al lado del otro 
 //para poner uno debajo del otro "<br>"
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/

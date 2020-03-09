@@ -1,7 +1,7 @@
 function mostrar()
 {
   var numeroIngresar;
- 	var contador = 0;
+  var contador = 0;
   var acumulador = 0;
   var promedio;
   var respuesta = 'si';

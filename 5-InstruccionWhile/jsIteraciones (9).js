@@ -1,5 +1,40 @@
 function mostrar()
 {
+  var numero;
+  var maximo = 0;
+  var minimo = 0;
+  var flag = 0;
+  var respuesta = 's';
+
+  while(respuesta == 's'){
+    numero = parseInt(prompt("Ingrese numero."));
+     
+    while(isNaN(numero)){
+      numero = parseInt(prompt("Error. Ingrese numero."));
+    }
+    if (flag == 0 || numero < minimo){
+     minimo = numero;
+    }  
+    if (flag == 0 || numero > maximo){
+      maximo = numero;
+      flag = 1;
+      
+    }
+
+    respuesta = prompt("Si desea continuar, ingrese 's'.");
+}
+console.log(maximo);
+console.log(minimo);
+
+document.getElementById("maximo").value = maximo;
+document.getElementById("minimo").value = minimo;
+
+}
+
+
+
+/*function mostrar()
+{
   //declarar variables
   var numeroIngresado;
   var maximo;
@@ -31,4 +66,4 @@ function mostrar()
 document.getElementById("").value = maximo;
 document.getElementById("").value = minimo;
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/
