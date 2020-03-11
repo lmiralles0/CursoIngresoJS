@@ -1,19 +1,21 @@
 function mostrar(){
-  var numero;
+  var numeroIngresado;
   var contadorDivisores = 0;
 
-  numero = parseInt(prompt("Ingrese un numero : "));
+  numeroIngresado = parseInt(prompt("Ingrese un numero."));
 
-  for (i = 1; i <= numero; i++){
-    if(numero % 1 == 0){
-      console.log(numero);
-      contadorDivisores++;
+  for (i = 0; i <= numeroIngresado; i++){
+    if(numeroIngresado % i == 0){
+      contadorDivisores ++;
+      console.log(i);
+      
 
     }
-  console.log(contadorDivisores);
-  }
+  
+  }console.log("La cantidad de Nº divisores es :" + contadorDivisores + ".");
 
 
 
 
 }//FIN DE LA FUNCIÓN
+//mostrar los numeros divisores desde el 1 al número ingresado, y mostrar la cantidad de numeros divisores encontrados.
