@@ -2,12 +2,13 @@ function mostrar()
 {
 var numeroIngresado;
 var acumuladorPrimo = 0;
-var dividendo = 2;
 
 numeroIngresado = parseInt(prompt("Ingrese numero."));
 
-for(var i = 1; i <= numeroIngresado; i ++){
-    if ((numeroIngresado % i == 0) && (i <= 2)) {
+
+
+for(var i = 0; i <= numeroIngresado; i ++){
+    if (numeroIngresado %  i == 0){
         acumuladorPrimo ++;
         console.log("Su numero es PRIMO.");
         console.log(i);
